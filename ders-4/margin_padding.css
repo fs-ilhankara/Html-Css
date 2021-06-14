@@ -1,0 +1,30 @@
+/* *{
+    margin: 0px;
+} */
+
+div{
+    background-color: rgba(255, 10, 50, 0.4);
+    padding: 25px;
+}
+#baslik1{
+    background-color: aqua;
+    /* margin-bottom: 0px; */
+}
+#par1{
+    background-color: darkgoldenrod;
+    /* margin-top: 0px; */
+    width: 300px;
+    margin: auto;
+    border: 20px solid red;
+    /* padding: 10px; */
+    padding: inherit;
+    width: 300px;
+    height: 300px;
+    box-sizing: content-box;
+    overflow: scroll;
+}
+
+#baslik3{
+    background-color: lawngreen;
+    margin-top: 80px;
+}

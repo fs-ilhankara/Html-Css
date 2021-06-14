@@ -1,0 +1,31 @@
+#par1{
+    color: rgba(0, 255, 10, 0.8);
+    text-align: center;
+    text-transform: uppercase;
+}
+#par2{
+    color: blue;
+    text-align: right;
+    text-transform: lowercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#par3{
+    color: red;
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    direction: rtl;
+    text-shadow: 2px 2px 5px blue;
+}
+#par4{
+    font-family: 'Parisienne', cursive;
+    color: blue;
+    text-shadow: 5px 5px 5px red;
+    font-size: 32px;
+}
+#par5{
+    color: green;
+    text-decoration: overline wavy red;
+    word-spacing: 15px;
+}
