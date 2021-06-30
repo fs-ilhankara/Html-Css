@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    border: 6px solid green;
+    display: flex;
+    height: 400px;
+    /* display: inline-flex; */
+    /* ----flex-direction------ */
+    /* flex-direction: row; */ /*default*/
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    
+    /* -----flex-wrap----- */
+    /* flex-wrap: nowrap; */ /*default*/
+    /* flex-wrap: wrap; */
+
+    /* ----felx-flow ---- */
+    /* flex-flow: row nowrap; */
+    /* flex-flow: column wrap; */
+
+
+    /* ----justify-content  */
+    /* justify-content: flex-start; */ /* default*/
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    
+
+    /* -----align-items----- (y eksenine göre)*/
+    /* align-items: stretch;  */   /*default*/
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+    
+
+
+    /* ---Align-Content----- */
+    /* align-content: stretch;  default */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+
+    
+}
+
+
+.items {
+    
+    background-color: indianred;
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    margin: 3px;
+    text-align: center;
+    width: 300px;
+}
+
+.item1 {
+    /* order default değeri 0 */
+    /* order: 1; */
+    /* align-self: flex-start; */
+}
+
+.item2 {
+    /* order: 2; */
+    /* flex-basis: 200px; */
+    /* align-self: flex-end; */
+}
+
+.item3 {
+    /* order: 4; */
+    /* flex-grow: 1; */
+    /* align-self: center; */
+    
+}
+
+.item4 {
+    /* order: 4; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 2; */
+    
+}
+
+.item6 {
+    /* order: -1; */
+}

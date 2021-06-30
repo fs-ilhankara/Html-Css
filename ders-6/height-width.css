@@ -1,0 +1,34 @@
+.lorem1 {
+    height: 500px;
+    width: 50%;
+    background-color: indianred;
+}
+.lorem2 {
+    background-color: lightblue;
+    width: 500px;
+    padding: 20px;
+    border: 15px solid blue ;
+}
+.max-width {
+    max-width: 50%;
+    /* width: %90; max-width değeri baskın */
+}
+
+.min-width {
+    min-width: 1000px;
+    /* width: %90; min-width değeri baskın */
+}
+
+.max-height {
+    max-height: 20px;
+    border: 10px solid red;
+    overflow: auto;
+    padding: 10px;
+}
+
+.last{
+    background-color: rosybrown;
+}
+.min-height {
+    min-height: 100px;
+}

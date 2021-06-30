@@ -1,0 +1,24 @@
+/* descendant slctr */
+
+div p {
+    background-color: royalblue;
+    color: white;
+}
+
+/* child Slctr */
+
+div > p {
+    background-color: yellowgreen;
+}
+
+/* Adj sibling slctr */
+
+div + p {
+    background-color: tomato;  
+}
+
+/* general sibling slctr */
+
+/* div ~ p {
+    background-color: turquoise;
+} */
