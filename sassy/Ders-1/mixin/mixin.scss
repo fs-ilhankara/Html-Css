@@ -1,0 +1,39 @@
+div{
+    float: left;
+    
+}
+
+@mixin container ($color:black, $height:100px) {
+    width: 100px;
+    height: $height;
+    background-color: $color;
+    margin: 15px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    margin: 15px;
+    border-radius: 25px * 2;
+}
+
+#first{
+    @include container(green,300px);
+    
+    
+}
+#second{
+    @include container(red,200px);
+}
+#third{
+    @include container();
+}
+#a1{
+    @extend.box;
+}
+#a2{
+    @extend.box;
+}
+#a3{
+    @extend.box;
+}

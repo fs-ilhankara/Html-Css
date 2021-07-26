@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+$primaryColor: red;
+$textColor:#fff;
+$witdhButton:15px;
+
+nav {
+    background-color: $primaryColor;
+
+    &::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+.left {
+    list-style: none;
+    float: left;
+    li{
+        $secondaryColor: green !global;
+        display: inline-block;
+        margin: 20px;
+        background-color: $primaryColor;
+        &:first-child{
+            margin: 0;
+        }
+        a{
+            background-color: $secondaryColor;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            display: inline-block;
+            padding: 10px;
+        }
+    
+    }
+}
+.right{
+    float: right;
+    
+}
+.cw, .linkedin {
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $textColor;
+}
+.cw{
+    &:link{
+        background-color: blueviolet;
+    }
+    &:hover{
+        background-color: darken($secondaryColor, 20%);
+    }
+}
+.linkedin{
+    background-color: $secondaryColor;
+    &:hover{
+        background-color: lighten($secondaryColor, $amount: 10%);
+    }
+}

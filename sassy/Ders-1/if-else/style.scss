@@ -1,0 +1,66 @@
+@mixin stil($team) {
+    @if ($team == "fb") {
+        background-color: blue;
+    }@else if ($team == "gs") {
+        background-color: red;
+    }@else if ($team == "bjk") {
+        background-color: black;
+    }@else {
+        background-color: purple;
+    }
+};
+
+
+.kutu{
+    float: left;
+    padding: 10px 15px;
+    color: white;
+    @include stil("fb")
+}
+
+//---each Döngüleri---\\
+
+$boyutlar:1, 2, 3, 4, 5, 6;
+
+@each $boyut in $boyutlar {
+    .b-#{$boyut}{
+        font-size: 10 + $boyut;
+    }
+}
+
+$boyutlar2:(
+    1:100,
+    2:200,
+    3:300,
+    4:400,
+    5:500,
+);
+
+@each $isim, $boyut in $boyutlar2 {
+    .c-#{$isim}{
+        float: left;
+        width: $boyut + px;
+    }
+    
+}
+
+
+//---for döngüsü---\\
+
+@for $i from 1 to 5 {
+    .ahmet#{$i}{
+        float: left;
+        width: $i * 100 + px;
+    }
+    
+}
+
+$sayi : 1;
+
+@while ($sayi <= 5) {
+    .k-#{$sayi}{
+        float: left;
+        width: $sayi * 100 + px;
+    }
+    $sayi: $sayi + 1;
+}
